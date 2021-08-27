@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/savedLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:background="@color/backgroundPins"
+        android:id="@+id/stamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="date and time"
+        android:textColor="@color/textcolor_general"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_general"
+        android:padding="1dp">
+
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/edit"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="View Account"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/view"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/edit"
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/delete"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/delete"
+            android:id="@+id/webName"
+            android:typeface="monospace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textColor="@color/colorHeading"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="2dp"
+            android:text="WebsiteName"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_bar"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/backupRestore"
+        android:title="Backup/Restore" />
+    <item
+        android:id="@+id/logAttempts"
+        android:title="Log Attempts" />
+    <item
+        android:id="@+id/changePassword"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/about"
+        android:title="About" />
+
+</menu>
